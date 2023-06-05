@@ -10,17 +10,25 @@
       object-fit:cover;
       height: 360px;
       width: 100%;
+      margin-bottom: 16px;
     }
   </style>
 </head>
 <body>
+  {% include 'nav.html' %}
+  <img class='img-fluid' id = 'banner' src = 'https://images.unsplash.com/photo-1504805572947-34fad45aed93?ixlib=rb-.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'>
   <div class='container'>  
   <h1 class='text-center mt-2 mb-4'>Shivaku Careers</h1>
-  <img class='img-fluid' id = 'banner' src = 'https://images.unsplash.com/photo-1504805572947-34fad45aed93?ixlib=rb-.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'>
-  <h2 class='text-center  mt-2 mb-4'>About Shivaku</h2>
-  <p class='lead'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est sit amet facilisis magna etiam tempor. Suspendisse sed nisi lacus sed. Urna et pharetra pharetra massa massa ultricies. Dui vivamus arcu felis bibendum ut. Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Imperdiet dui accumsan sit amet nulla facilisi morbi tempus. Vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean. Quis varius quam quisque id diam vel quam elementum pulvinar. Ornare aenean euismod elementum nisi quis eleifend quam adipiscing. Magnis dis parturient montes nascetur ridiculus mus mauris vitae ultricies.</p>
-<p class='lead'>
-Pulvinar elementum integer enim neque volutpat ac tincidunt vitae semper. Pharetra massa massa ultricies mi quis hendrerit dolor magna eget. Amet consectetur adipiscing elit ut aliquam purus sit amet. Amet dictum sit amet justo donec enim diam. Gravida arcu ac tortor dignissim. Dolor sit amet consectetur adipiscing. Varius sit amet mattis vulputate enim nulla aliquet porttitor. Nisl nunc mi ipsum faucibus vitae aliquet. Pharetra vel turpis nunc eget lorem dolor sed viverra ipsum. Enim nunc faucibus a pellentesque.</p>
+    <div class="row" style="margin-bottom:32px">
+      <div class="col-md-6">
+
+    <p class='lead'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Est sit amet facilisis magna etiam tempor. Suspendisse sed nisi lacus sed. Urna et pharetra pharetra massa massa ultricies. Dui vivamus arcu felis bibendum ut. Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Imperdiet dui accumsan sit amet nulla facilisi morbi tempus. Vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean. Quis varius quam quisque id diam vel quam elementum pulvinar. Ornare aenean euismod elementum nisi quis eleifend quam adipiscing. Magnis dis parturient montes nascetur ridiculus mus mauris vitae ultricies.</p>
+        
+      </div>
+      <div class="d-none d-md-block col-md-6">
+        <img src="/static/side_img.jpg" style="height:320px;border-radius:4px;">
+      </div>
+    </div>
 
   <h2 class='text-center mt-2 mb-4'>Open Positions</h2>
   <p>
@@ -29,9 +37,9 @@ Pulvinar elementum integer enim neque volutpat ac tincidunt vitae semper. Pharet
   {% endfor %}
   </p>
     <div class = 'text-center'>
-  <button class = 'btn btn-primary btn-lg mt-3'>Contact Us</button>
-      <p class = 'mt-4 mb-2'>Copyright 2022, Shivaku</p>
+  <a href="mailto:hello@jovian.ai?subject=Question%20about%20Job%20Openings&body=My%20name%3A%20%3Cyour%20name%20here%3E%0D%0A%0D%0AMy%20questions%3A%20%3Center%20question%20here%3E%0D%0A" class = 'btn btn-primary btn-lg mt-3'>Contact Us</a>
     </div>
     </div>
+  {% include 'footer.html' %}
 </body>
 </html>
